@@ -1,0 +1,94 @@
+{
+  "_note": "SINGLE SOURCE OF TRUTH. Agents may ONLY use facts written in this file. Anything null/empty = do not answer; skip the job and log 'Needs Review'. Fill every FILL_ME with TRUE facts about YOU. Never exaggerate.",
+  "mode": "dry_run",
+  "name": "FILL_ME Full Legal Name",
+  "short_name": "FILL_ME First Last",
+  "location": "FILL_ME Suburb STATE POSTCODE",
+  "phone": "FILL_ME",
+  "email": "FILL_ME your-job-email@example.com",
+  "work_rights": {
+    "statement": "FILL_ME one honest sentence, e.g. 'Australian citizen' or '<visa type>: <your hours rule and any dates it changes>'",
+    "never_claim": [
+      "FILL_ME things you must NEVER claim, e.g. 'Australian citizen', 'permanent resident', 'unrestricted work rights'"
+    ]
+  },
+  "availability": {
+    "statement": "FILL_ME exactly what to state on every resume, cover letter and form, e.g. 'Available Monday to Sunday, any shift' or list the days/times you are NOT available.",
+    "unavailable_windows": [],
+    "max_hours_per_week": null,
+    "notice_period": "FILL_ME e.g. 'None, available immediately'"
+  },
+  "experience": [
+    {
+      "title": "FILL_ME job title",
+      "org": "FILL_ME employer, suburb/city",
+      "dates": "FILL_ME e.g. Jul 2025 – Dec 2025",
+      "verified_duties": [
+        "FILL_ME one TRUE duty per line (agents turn these into resume bullets)"
+      ]
+    }
+  ],
+  "education": [
+    { "degree": "FILL_ME", "dates": "FILL_ME", "detail": "FILL_ME institution, city" }
+  ],
+  "certificates": ["FILL_ME only certificates/licences you really hold, e.g. First Aid, RSA, full driver's licence, WWCC"],
+  "languages": "FILL_ME e.g. English (fluent), Hindi",
+  "systems": "FILL_ME e.g. Microsoft Excel, POS systems",
+  "skills_verified": ["FILL_ME skills you can prove, one per line"],
+  "not_held": [
+    "FILL_ME things you do NOT have, so agents skip jobs needing them (e.g. forklift licence, Cert III in Individual Support, truck licence, 2+ years in a field)"
+  ],
+  "checks_held": ["FILL_ME e.g. National Police Check (issued month year), Working with Children Check"],
+
+  "career_summary": "FILL_ME 2-4 true sentences for the top of the resume.",
+  "cover_experience_paragraph": "FILL_ME one true paragraph for cover letters summarising your experience.",
+  "cover_strength_bullets": ["FILL_ME 2-3 true one-line strengths for cover letters"],
+  "keyword_skills": [
+    {
+      "match": ["customer service", "guest service"],
+      "line": "EXAMPLE: replace this line with a true skill line you can back up (lines starting with EXAMPLE are never used)"
+    }
+  ],
+
+  "form_answers": {
+    "pay_expectation": "Use the rate advertised. If none: 'Award rate, open to discussion'.",
+    "right_to_work_question": "FILL_ME which option to pick on portals, or 'SKIP and flag' if none fits",
+    "currently_employed": "FILL_ME Yes/No",
+    "notice_period": "FILL_ME",
+    "transport": "FILL_ME e.g. Personal car (full licence) / public transport",
+    "willing_to_relocate": "unknown: skip",
+    "police_check_question": "FILL_ME",
+    "aboriginal_or_tsi": "NOT APPROVED to answer. Leave blank; if mandatory, skip the job and log Needs Review.",
+    "max_lifting": "FILL_ME e.g. Up to 20kg",
+    "years_experience_by_skill": "FILL_ME e.g. 'Sales: 2 years (round DOWN)'"
+  },
+
+  "always_skip_if": [
+    "requires citizen or permanent resident (if that is not you)",
+    "requires a qualification or licence listed in not_held",
+    "asks for a fee, bank details, TFN, ID documents, or to move to WhatsApp/Telegram",
+    "pay far above market for the role with vague duties (scam signal)",
+    "ad is older than 30 days",
+    "asks something not covered by form_answers (answer is null/unknown)",
+    "login wall, CAPTCHA or verification code appears",
+    "contractor/ABN-only arrangement"
+  ],
+
+  "email_policy": {
+    "account": "FILL_ME the job email, read via Gmail in the signed-in Chrome profile only",
+    "rule": "If an employer replies and it needs your action or a decision, ASK YOU first and do not reply. If it is routine (thanks, receipt, simple facts already in this file), reply on your behalf and tell you.",
+    "ask_user_first": [
+      "interview invitations or any time/date to accept or propose",
+      "job offers, pay, contract, start date or roster decisions",
+      "requests for documents, ID, passport, visa details, bank details, TFN, police check upload",
+      "assessments, tests, video interviews, forms or links to complete",
+      "anything unclear, negative, or that looks like a scam (flag as SCAM, do not reply)"
+    ],
+    "style": "Short, polite. Sign off with your name and phone. Never include sensitive data (ID numbers, bank, TFN, passport, full date of birth)."
+  },
+
+  "browser_rule": {
+    "allowed": "Claude in Chrome connected to the Chrome profile signed in as FILL_ME your-job-email@example.com ONLY.",
+    "verify_before_work": "At the start of every session open https://myaccount.google.com/ in your own tab and confirm that account. If it shows another account, or portals are signed out, STOP and tell the user."
+  }
+}

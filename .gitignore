@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# YOUR filled-in config — the repo ships *.example.json templates.
+# Copy them to the real filenames and keep YOUR versions local (they hold personal data).
+job-agent/profile.json
+job-agent/search_criteria.json
+
+# Generated applications & build artifacts
+job-agent/output/
+*.pdf
+*.docx
+
+# Runtime / working files
+job-agent/.tracker.lock
+job-agent/backups/
+job-agent/run_*.md
+
+# OS / editor junk
+.DS_Store
+*.swp
+*~

@@ -1,0 +1,28 @@
+{
+  "name": "ai-job-application-agents",
+  "version": "1.0.0",
+  "description": "A team of AI agents (Claude Code + Claude in Chrome) that search job sites, tailor a one-page resume and cover letter per job, apply in your own signed-in browser, and track everything. Honest by design: it only uses facts you verify, and anything sensitive stops and waits for you.",
+  "license": "MIT",
+  "author": "Jaykumar Chauhan",
+  "homepage": "https://github.com/JC16092/ai-job-application-agents#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JC16092/ai-job-application-agents.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JC16092/ai-job-application-agents/issues"
+  },
+  "keywords": [
+    "job-search",
+    "resume",
+    "cover-letter",
+    "automation",
+    "ai-agents",
+    "claude",
+    "claude-code"
+  ],
+  "private": true,
+  "dependencies": {
+    "docx": "^8.5.0"
+  }
+}

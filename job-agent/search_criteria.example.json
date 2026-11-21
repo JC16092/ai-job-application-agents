@@ -1,0 +1,28 @@
+{
+  "_note": "Edit before the first run. Agents search ONLY what is written here.",
+  "roles": [
+    "FILL_ME role types you want, e.g. retail, hospitality, warehouse, customer service, delivery driver (employee)"
+  ],
+  "locations": ["FILL_ME e.g. Melbourne VIC"],
+  "home_base": "FILL_ME suburb STATE POSTCODE",
+  "max_distance_km": 60,
+  "min_hourly_rate": 30,
+  "job_types": ["casual", "part-time", "full-time", "permanent"],
+  "exclude_keywords": ["commission only", "ABN required", "unpaid", "pay to start"],
+  "portals": ["SEEK", "Indeed", "Glassdoor", "Jora", "Zapid"],
+  "never_use_portals": ["LinkedIn"],
+  "daily_application_limit": null,
+  "notify_email": "FILL_ME",
+  "portal_notes": {
+    "SEEK": "Quick apply. Use the portal's own apply form.",
+    "Indeed": "Often shows a Cloudflare 'verify you are human' page: stop and report, never bypass. Search slowly.",
+    "Glassdoor": "Easy Apply is routed through Indeed, so it hits the same Cloudflare check.",
+    "Jora": "Quick apply only; NEVER use AI-assisted apply.",
+    "Zapid": "Short forms; some need a video step (skip those)."
+  },
+  "priority_focus": {
+    "keywords": ["seasonal casual", "Christmas casual", "summer casual", "peak season"],
+    "recency": "Prioritise ads listed in the last 1-3 days, then 7 days. Skip ads older than 14 days unless nothing newer is left.",
+    "order": "1) newest seasonal/casual, 2) other casual roles in your target areas, 3) everything else that qualifies."
+  }
+}
